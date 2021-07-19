@@ -6,6 +6,7 @@ body {
     background: gray;
     padding: 20x;
     height: auto;
+    color: white;
 }
 
 .header img {
@@ -19,6 +20,7 @@ body {
 
 .header-nav a {
     padding: 0 10px;
+    color: inherit;
 }
 
 .header-title {
