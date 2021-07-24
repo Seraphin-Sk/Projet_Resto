@@ -2,12 +2,15 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+html {
     font-size: 16px;
     color: rgba(0, 0, 0, .87);
     font-family: "Montserrat", sans-serif;
     line-height: 1.6;
     margin: 0;
+    font-weight: 500;
+    background: #FBFBFB;
 }
 
 .topbar {
@@ -18,6 +21,8 @@ body {
     width: 100%;
     background: white;
     padding: 30px;
+    z-index: 3;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .7);
 }
 
 .topbar nav {
@@ -50,23 +55,28 @@ body {
 }
 
 .Apple {
-    height: 427px;
+    height: 520px;
     background: no-repeat center center / cover url("img/apple.jpg");
 }
 
+.bodys {
+    display: flex;
+}
+
 .main {
-    float: left;
     background: #FFF;
     width: calc(100% - 375px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
+    position: relative;
+    z-index: 2;
 }
 
 .sidebar {
-    float: right;
-    background: #FBFBFB;
-    background: #CCC;
+    position: relative;
     width: 375px;
     padding: 40px;
     font-size: 17px;
+    z-index: 1;
 }
 
 .sidebar-title {
@@ -100,7 +110,52 @@ body {
 }
 
 .sidebar hr {
-    border-color: #C4C4c4;
+    border: none;
+    background: #C4C4c4;
+    height: 1px;
+    margin: 50px 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+article {
+    overflow: hidden;
+    margin: 50px 0;
+}
+
+article a {
+    color: inherit;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+.article-img {
+    float: left;
+    width: 308px;
+    margin-right: 25px;
+}
+
+.article-img img {
+    width: 100%;
+    height: auto;
+}
+
+.article-date {
+    font-weight: 300;
+    color: rgba(0, 0, 0, .6);
+    margin-bottom: 5px;
+}
+
+.article-title {
+    font-size: 2.25rem;
+    line-height: 1.1;
+    font-family: "Cardo", serif;
 }
 
 .footer {
